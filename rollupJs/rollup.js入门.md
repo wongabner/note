@@ -8,7 +8,8 @@ rollup.js可以将我们自己编写的Javascript代码（通过插件可以支�
 rollup.js运行机制
 
 <!-- ![20200914085138](./images/img1.jpg) -->
-![20201224142927](https://raw.githubusercontent.com/wongsam/picgo/master/20201224142927.png)
+
+![20201224154319](https://raw.githubusercontent.com/wongabner/picgo/master/20201224154319.png)
 
 rollup.js默认采用ES模块标准，我们可以通过rollup-plugin-commonjs插件使之支持CommonJS标准。
 
