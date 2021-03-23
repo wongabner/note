@@ -1,10 +1,10 @@
-![20200914083153](https://raw.githubusercontent.com/wongabner/picgo/master/20200914083153.png)
+![图 1](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-04-03.png)  
 
-![20200914083432](https://raw.githubusercontent.com/wongabner/picgo/master/20200914083432.png)
+![图 3](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-05-05.png)  
 
 虽然负责解释和执行js代码的线程只有1个，但是浏览器内部还有其他线程来专门负责异步任务的，比如定时器，UI，事件，网络等专门线程来负责相关任何的处理。
 
-![20200914083415](https://raw.githubusercontent.com/wongabner/picgo/master/20200914083415.png)
+![图 4](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-05-32.png)  
 
 1. step1：主线程读取JS代码，此时为同步环境，形成相应的堆和执行栈；
 
@@ -20,4 +20,4 @@
 
     同步环境执行（step1） -> 事件循环1（step4） -> 事件循环2（step4）…
 
-![20200914083835](https://raw.githubusercontent.com/wongabner/picgo/master/20200914083835.png)
+![图 5](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-05-58.png)  

@@ -1,6 +1,8 @@
-### 冒泡排序（Bubble Sort
+![图 40](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-59-38.png)  
 
-![thum_F561E518FFBC476481D0B39686E67005](https://raw.githubusercontent.com/wongabner/picgo/master/thum_F561E518FFBC476481D0B39686E67005.GIF)
+### 冒泡排序（Bubble Sort)
+
+![thum_F561E518FFBC476481D0B39686E67005](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/maopao.gif)
 
 > 思路：数组中有 n 个数，比较每相邻两个数，如果前者大于后者，就把两个数交换位置；这样一来，第一轮就可以选出一个最大的数放在最后面；那么经过 n-1（数组的 length - 1） 轮，就完成了所有数的排序。
 
@@ -9,7 +11,6 @@ function bubbleSort(arr) {
   var len = arr.length;
   //比较轮数
   for (var i = 0; i < len-1; i++) {
-    console.log('xxx',i)
     //每轮比较次数，次数=长度-1-此时的轮数
     for (var j = 0; j < len - 1 - i; j++) {
       //相邻元素两两对比
@@ -27,7 +28,7 @@ function bubbleSort(arr) {
 
 ### 选择排序（Selection Sort）
 
-![thum_44DBBEA2E9944E749CC2B4BCFC6882F9](https://raw.githubusercontent.com/wongabner/picgo/master/thum_44DBBEA2E9944E749CC2B4BCFC6882F9.GIF)
+![thum_44DBBEA2E9944E749CC2B4BCFC6882F9](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/xuanzhe.gif)
 
 > 比如在一个长度为N的无序数组中，在第一趟遍历N个数据，找出其中最小的数值与第一个元素交换，第二趟遍历剩下的N-1个数据，找出其中最小的数值与第二个元素交换……第N-1趟遍历剩下的2个数据，找出其中最小的数值与第N-1个元素交换，至此选择排序完成。
 
@@ -52,7 +53,7 @@ function selectionSort(arr) {
 
 ### 插入排序（Insertion Sort）
 
-![thum_38B9943D96C646D1953BCAA53B9B04A4](https://raw.githubusercontent.com/wongabner/picgo/master/thum_38B9943D96C646D1953BCAA53B9B04A4.GIF)
+![thum_38B9943D96C646D1953BCAA53B9B04A4](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/charu.gif)
 
 > 从第一个元素开始，该元素可以认为已经被排序；  
 取出下一个元素，在已经排序的元素序列中从后向前扫描；  
@@ -99,7 +100,7 @@ console.log(a);  //返回数组[3,1,5,7,9,0,8,6,4,2]
 
 ### 快速排序（Quick Sort）
 
-![thum_ABFB45F8B2FF42E7BBC613692E8757F3](https://raw.githubusercontent.com/wongabner/picgo/master/thum_ABFB45F8B2FF42E7BBC613692E8757F3.GIF)
+![thum_ABFB45F8B2FF42E7BBC613692E8757F3](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/kuaisu.gif)
 
 > 定义： 
 1．先从数列中取出一个数作为基准数。
@@ -141,6 +142,46 @@ function swap(arr, i, j) {
 }
 ```
 
+```js
+let quickSort = (arr) => {
+    // 5.设置判断条件 当arr的长度小于等于1个的时候，没有必要继续左右顶堆，也没有必要去比较
+    if(arr.length <= 1>) return arr
+    // 1.初始化一个标识符
+    let pivot = arr.shift()
+
+    // 2.初始化一个左树和右树
+    let left = [],
+        right = []
+    
+    // 3.for循环遍历该数组中剩下的其他元素 进行比较 标识符和其中的每个元素挨个比较
+    for (let i = 0; i< arr.length; i++) {
+        if(arr[i] < pivot) {
+            // 如果该元素小于标识符 放入左树
+            left.push(arr[i])
+        }else {
+            right.push(arr[i])
+        }
+    }
+
+    // 把左树和标识符和右树的内容直接返回
+    return [...quickSort(left), pivot, ...quickSort(right)]
+}
+```
+
+简化：
+
+```js
+    let quickSort = (arr) => {
+        if(!arr.length) return []
+        // 数组分别赋值给标识符和剩下的其他内容
+        let [pivot, ...newArr] = arr,
+            left = newArr.filter((e) => e < pivot),
+            right = newArr.filter((e) => e > pivot)
+
+        return [...quickSort(left), pivot, ...quickSort(right)]
+    }
+```
+
 ### 希尔排序（Shell Sort）
 
 ```js
@@ -166,7 +207,7 @@ function shellSort(arr) {
 
 ### 归并排序（Merge Sort）
 
-![thum_2D5FC7AB865D44C98C34DF3C1A78ED91](https://raw.githubusercontent.com/wongabner/picgo/master/thum_2D5FC7AB865D44C98C34DF3C1A78ED91.GIF)
+![thum_2D5FC7AB865D44C98C34DF3C1A78ED91](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/guibin.gif)
 
 ```js
 function mergeSort(arr) {  //采用自上而下的递归方法
@@ -204,7 +245,7 @@ function merge(left, right)
 
 ### 计数排序（Counting Sort）
 
-![thum_DAD05B722A2B4BE4875772EE31206830](https://raw.githubusercontent.com/wongabner/picgo/master/thum_DAD05B722A2B4BE4875772EE31206830.GIF)
+![thum_DAD05B722A2B4BE4875772EE31206830](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/jishu.gif)
 
 ```js
 function countingSort(arr, maxValue) {

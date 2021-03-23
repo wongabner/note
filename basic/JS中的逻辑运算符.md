@@ -22,7 +22,7 @@
 
 举个栗子：
 
-![20200914085138](https://raw.githubusercontent.com/wongabner/picgo/master/20200914085138.png)
+![图 33](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-22-40.png)  
 
 ### 3、位运算符：|
 
@@ -31,11 +31,11 @@
 
 继续举栗子
 
-![20200914085207](https://raw.githubusercontent.com/wongabner/picgo/master/20200914085207.png)
+![图 34](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-23-06.png)  
 
 |运算符还能进行取整运算
 
-![20200914085226](https://raw.githubusercontent.com/wongabner/picgo/master/20200914085226.png)
+![图 35](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-23-18.png)  
 
 ### 4、位运算符：&
 
@@ -44,4 +44,5 @@
 
 还是举栗子：
 
-![20200914085242](https://raw.githubusercontent.com/wongabner/picgo/master/20200914085242.png)
+![图 36](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-23-29.png)  
+

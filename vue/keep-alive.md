@@ -6,7 +6,7 @@ keep-alive 是 Vue 内置的一个组件，可以使被包含的组件保留状�
 
 使用方法
 
-![20200917010623](https://raw.githubusercontent.com/wongabner/picgo/master/20200917010623.png)
+![图 25](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-19-41.png)  
 
 参数解释
 
@@ -20,4 +20,4 @@ include 和 exclude 的属性允许组件有条件地缓存。二者都可以用
 
 使用示例
 
-![20200917010641](https://raw.githubusercontent.com/wongabner/picgo/master/20200917010641.png)
+![图 26](https://wongabner.coding.net/p/picgo/d/mdimg/git/raw/master/2021-03-23-19-19-56.png)  
